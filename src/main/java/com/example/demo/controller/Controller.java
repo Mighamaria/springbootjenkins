@@ -1,2 +1,14 @@
-package com.example.demo.controller;public class Controller {
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Controller {
+    @GetMapping("/login")
+    public String log(){
+        return  "welcome to home page";
+    }
+
+
 }
